@@ -40,10 +40,7 @@ public class FlightAdapter extends RecyclerView.Adapter<FlightAdapter.FlightView
     @Override
     public void onBindViewHolder(@NonNull FlightViewHolder holder, int position) {
                 Flight currentFlight= flights.get(position);
-                Glide.with(context)
-                .load(flights.get(position).getLogo())
-                .apply(RequestOptions.centerCropTransform())
-                .into(holder.logo);
+                Glide.with(context).load(flights.get(position).getLogo()).apply(RequestOptions.centerCropTransform()).into(holder.logo);
                 holder.airline.setText(currentFlight.getAirline());
                 holder.src.setText(currentFlight.getSource().toUpperCase());
                 holder.dest.setText(currentFlight.getDestination().toUpperCase());

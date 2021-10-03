@@ -9,7 +9,6 @@ import com.example.go_mmt.Repository.ApiCall;
 
 import java.util.List;
 
-import io.reactivex.Scheduler;
 
 public class FlightViewModel extends ViewModel {
     private MutableLiveData<List<Flight>> flights;

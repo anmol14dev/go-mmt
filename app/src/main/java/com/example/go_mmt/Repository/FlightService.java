@@ -11,6 +11,6 @@ import retrofit2.http.Path;
 
 public interface FlightService {
 
-    @GET("v3/f1cb8ae1-42c7-4ac6-9b63-2f5f055648d5")
+    @GET("getAllFlights")
     Call<FlightModel> listFlights();
 }
